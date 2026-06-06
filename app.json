@@ -1,25 +1,23 @@
 {
   "expo": {
-    "name": "parallel-universe-v2",
-    "slug": "parallel-universe-v2",
+    "name": "平行宇宙",
+    "slug": "parallel-universe",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#000000",
+    "scheme": "parallel-universe",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.thatguy.paralleluniverse",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "我们需要读取你的步数数据，用来判断另一个宇宙的你是否有新的信件送达。"
+      }
     },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      "expo-router",
+      "expo-asset"
+    ]
   }
 }
